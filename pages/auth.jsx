@@ -3,6 +3,7 @@ import { StyledFirebaseAuth } from "react-firebaseui/StyledFirebaseAuth";
 import firebase from "../firebase/clientApp.js";
 
 const uiConfig = {
+  signInFlow: 'popup',
   signInSuccessUrl: "/",
   signInOptions: [firebase.auth.GithubAuthProvider.PROVIDER_ID],
 };
